@@ -1,0 +1,71 @@
+/* --- Importación de Tipografía y Variables Globales --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --color-primario: #3D5AFE;
+    --color-secundario: #FFD600;
+    --color-fondo: #FDFEFE;
+    --color-texto-principal: #212121;
+    --color-texto-secundario: #757575;
+    --color-blanco: #FFFFFF;
+    --color-borde-suave: #E0E0E0;
+    --color-exito: #00C853;
+    --color-error: #D50000;
+    --sombra-elevada: 0 8px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+    --sombra-sutil: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --radio-borde: 12px;
+    --transicion-rapida: all 0.3s ease-in-out;
+}
+
+/* --- Estilos Generales --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    line-height: 1.7;
+}
+
+/* --- Barra de Navegación --- */
+.navbar { transition: var(--transicion-rapida); padding: 1rem 0; }
+.navbar-brand img { height: 50px; transition: transform 0.3s ease; }
+.navbar-brand:hover img { transform: scale(1.05); }
+.nav-link { font-weight: 500; color: var(--color-texto-secundario); position: relative; padding: 8px 0; margin: 0 1rem; }
+.nav-link::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background-color: var(--color-primario); border-radius: 2px; transition: var(--transicion-rapida); }
+.nav-link:hover, .nav-link.active { color: var(--color-primario); }
+.nav-link:hover::after { width: 100%; }
+.user-container .nav-link { font-weight: 700; }
+.login-icon { font-size: 1.8rem; color: var(--color-texto-principal); transition: var(--transicion-rapida); }
+.login-icon:hover { color: var(--color-primario); transform: scale(1.1); }
+
+/* --- Títulos de Sección --- */
+h2 { font-weight: 700; text-align: center; margin-bottom: 50px; position: relative; }
+h2::after { content: ''; position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); width: 60px; height: 5px; background-color: var(--color-secundario); border-radius: 3px; }
+
+/* --- Tarjetas de Producto --- */
+.product-card { border: 1px solid var(--color-borde-suave); border-radius: var(--radio-borde); box-shadow: var(--sombra-sutil); transition: var(--transicion-rapida); overflow: hidden; background: var(--color-blanco); }
+.product-card:hover { transform: translateY(-8px); box-shadow: var(--sombra-elevada); }
+.product-card img { height: 280px; width: 100%; object-fit: cover; display: block; }
+.product-card .card-body { padding: 1.5rem; }
+.product-card .card-title { font-weight: 700; font-size: 1.25rem; }
+.product-card .card-text { color: var(--color-texto-secundario); }
+.product-card .h4 { font-weight: 700; color: var(--color-primario); }
+
+/* --- Botones --- */
+.btn { font-weight: 700; border-radius: 50px; padding: 12px 30px; border: none; transition: var(--transicion-rapida); letter-spacing: 0.5px; }
+.btn-primary { background-color: var(--color-primario); color: var(--color-blanco); box-shadow: 0 4px 15px rgba(61, 90, 254, 0.3); }
+.btn-primary:hover { background-color: #304FFE; transform: translateY(-3px); box-shadow: 0 6px 20px rgba(61, 90, 254, 0.4); }
+.btn-secondary { background-color: var(--color-texto-principal); color: var(--color-blanco); }
+.btn-secondary:hover { background-color: #000; }
+.btn-success { background-color: var(--color-exito); }
+.btn-danger { background-color: var(--color-error); }
+
+/* --- Secciones y Formularios --- */
+#carrito, #checkout, #info-pago-envio, #terminos, #cuenta-container, .login-container { background-color: var(--color-blanco); border: 1px solid var(--color-borde-suave); border-radius: var(--radio-borde); padding: 2rem; box-shadow: var(--sombra-elevada); }
+.form-label { font-weight: 500; color: var(--color-texto-secundario); }
+.form-control, .form-select { border-radius: 8px; border: 1px solid var(--color-borde-suave); padding: 12px 15px; transition: var(--transicion-rapida); }
+.form-control:focus, .form-select:focus { border-color: var(--color-primario); box-shadow: 0 0 0 3px rgba(61, 90, 254, 0.15); }
+.form-check-input:checked { background-color: var(--color-primario); border-color: var(--color-primario); }
+
+/* --- Footer --- */
+footer { background-color: var(--color-texto-principal); color: var(--color-fondo); padding: 2.5rem 0; margin-top: 4rem; }
