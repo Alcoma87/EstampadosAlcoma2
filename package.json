@@ -1,0 +1,15 @@
+{
+  "name": "backend-alcoma",
+  "version": "1.0.0",
+  "description": "Backend para la tienda Estampados Alcoma",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
+    "sqlite3": "^5.1.7"
+  }
+}
