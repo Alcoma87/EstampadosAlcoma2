@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
-    --color-primario: #3D5AFE;
-    --color-secundario: #FFD600;
-    --color-fondo: #FDFEFE;
-    --color-texto-principal: #212121;
-    --color-texto-secundario: #757575;
-    --color-blanco: #FFFFFF;
-    --color-borde-suave: #E0E0E0;
-    --color-exito: #00C853;
-    --color-error: #D50000;
-    --sombra-elevada: 0 8px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
-    --sombra-sutil: 0 4px 15px rgba(0, 0, 0, 0.08);
-    --radio-borde: 12px;
-    --transicion-rapida: all 0.3s ease-in-out;
+    color-primario: #3D5AFE;
+    color-secundario: #FFD600;
+    color-fondo: #FDFEFE;
+    color-texto-principal: #212121;
+    color-texto-secundario: #757575;
+    color-blanco: #FFFFFF;
+    color-borde-suave: #E0E0E0;
+    color-exito: #00C853;
+    color-error: #D50000;
+    sombra-elevada: 0 8px 25px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+    sombra-sutil: 0 4px 15px rgba(0, 0, 0, 0.08);
+    radio-borde: 12px;
+    transicion-rapida: all 0.3s ease-in-out;
 }
 
 /* --- Estilos Generales --- */
